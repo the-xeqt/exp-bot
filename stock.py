@@ -14,16 +14,15 @@ async def main():
 
     @client.on(events.NewMessage(pattern='/start'))
     async def start(event):
-       
-       buttons = [
-            [Button.url("🔰 Read Me 🔰", "https://telegra.ph/How-to-Use-Me-08-22")]
+        buttons = [
+            [Button.url("🔰 Read Me 🔰", "https://telegra.ph/How-to-Use-Me-08-22")],
+          [Button.url("➕Add me to Group➕",f"https://t.me/stock342bot?startgroup=true")] 
        ]
-       [
-          await event.reply(''' Hello ! I am alive , 
+        await event.reply(''' Hello ! I am alive , 
     Which Stock do you want to get to know
     You can Use /s <stock_symbol>
     For more info Click on below Button''', buttons=buttons)
-       ]
+       
     @client.on(events.NewMessage(pattern='/s'))
     async def stock(event):
         try:
