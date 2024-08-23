@@ -4,9 +4,9 @@ from telethon import TelegramClient, events,Button
 from telethon.sessions import StringSession
 
 # Replace these with your actual credentials
-API_ID = '5954976'        # Replace with your Telegram API ID
-API_HASH = '1927f462757cdf43a9abcbac129d029d'    # Replace with your Telegram API Hash
-BOT_TOKEN = '7292115818:AAFutLGsqN8gvTqwAQeFx6LjkZV0r0D1Qsc'  # Replace with your Telegram Bot Token
+API_ID = ''        # Replace with your Telegram API ID
+API_HASH = ''    # Replace with your Telegram API Hash
+BOT_TOKEN = ''  # Replace with your Telegram Bot Token
 
 # Initialize the Telegram client
 client = TelegramClient('stock_bot', API_ID, API_HASH).start(bot_token=BOT_TOKEN)
